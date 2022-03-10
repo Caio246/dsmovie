@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import './styles.css'
+import { Link } from "react-router-dom";
+
 function Form() {
 
   const movie = {
@@ -34,7 +36,11 @@ function Form() {
             <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
           </div>
         </form >
-        <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+
+        <Link to={"/"}>
+          <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+        </Link>
+
       </div >
     </div >
   )
